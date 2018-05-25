@@ -1,0 +1,25 @@
+name: hello
+author: "mmacedoeu <contato@mmacedo.eu.org>"
+about: hello
+args:
+  - log:
+      short: l
+      value_name: LOG_PATTERN
+      help: Sets a custom logging
+      takes_value: true
+  - port:
+      short: p
+      value_name: PORT
+      help: Api tcp listener port, default to environment variable PORT or 8080
+      takes_value: true
+  - interface:
+      short: i
+      value_name: IP
+      help: Specify the hostname portion of the REST API server, IP should be an interface's IP address, or all (all interfaces) or local.
+      default_value: local
+      takes_value: true   
+  - base:
+      short: b
+      value_name: base
+      help: Specify the base storage path.
+      takes_value: true      
